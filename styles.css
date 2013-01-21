@@ -1,0 +1,121 @@
+html {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ball{
+
+    border-radius:50%;
+    background:#F00;
+/*    background-image:url("prannay.png");
+    background-size: contain;*/
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+
+.paddle{
+    position:absolute;
+    background:#FFF;
+}
+
+.gameSurface{
+    background-color:black;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+}
+
+.scoreboard{
+    margin-left:auto;
+    margin-right:auto;
+    width:600px;
+    height:100px;
+    background-color:#CCC;
+    font-size:3em;
+    font-weight:700;
+}
+
+.scoreboard > div {
+    margin-top:20px;
+}
+
+.scoreboard .playerOne{
+    color:blue;
+    float:left;
+    margin-left:100px;
+    
+}
+
+.scoreboard .playerTwo {
+    color:green;
+    float:right;
+    margin-right:100px;
+
+}
+
+.instructions, .debug {
+    width:600px;
+    
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#DDD;
+    vertical-align:middle;
+    font-size:.8em;
+}
+
+.instructions h1, .instructions h2 {
+    font-size:1em;
+}
+.instructions h1 {
+    text-decoration:underline;
+}
+.instructions .playerOne, .instructions .playerTwo{
+    float:left;
+    width:50%;
+}
+.instructions .playerOne {
+    color:blue;
+}
+.instructions .playerTwo {
+    color:green;
+}
+
+.instructions .specials {
+    color:purple;
+    clear:both;
+}
+
+
+.specialItem {
+
+    text-align:center;
+    font-size:1.2em;
+    border-style: dashed;
+    border-radius:3px;
+    position:absolute;
+    -webkit-transition: top 0.5s ease-in, left 0.5s ease-in;
+    -o-transition: top 0.5s ease-in, left 0.5s ease-in;
+    -moz-transition: top 0.5s ease-in, left 0.5s ease-in;
+    -ms-transition: top 0.5s ease-in, left 0.5s ease-in;
+}
+
+.specialItem_fastball {
+    border-color:green;
+    color:green;
+ }
+
+ .specialItem_slowball {
+    border-color:red;
+    color:red;
+ }
+
+ .specialItem_slowpaddle {
+    border-color:yellow;
+    color:yellow;
+ }
+
+ .specialItem_crazyball {
+    border-color:purple;
+    color:purple;
+ }

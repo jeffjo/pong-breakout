@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <script type="text/javascript" src="utils.js"></script>
+        <script type="text/javascript" src="ball.js"></script>
+        <script type="text/javascript" src="paddle.js"></script>
+        <script type="text/javascript" src="special_item.js"></script>
+        <script type="text/javascript" src="player.js"></script>
+        <script type="text/javascript" src="pong.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        
+    </head>
+	<body>
+		
+        <div id="main"></div>        
+        <div class="instructions">
+            <div class="playerOne">
+                <h1>Player 1</h1>
+                <p>a = Up</p>
+                <p>z = Down</p>
+                <p>x = Special</p>
+            </div>
+            <div class="playerTwo">
+                <h1>Player 2</h1>
+                <p>up arrow = Up</p>
+                <p>down arrow = Down</p>
+                <p>/ = Special</p>
+            </div>
+            <div class="specials">
+                <h1>Specials</h1>
+                <p>fb = Fast Ball</p>
+                <p>sb = Slow Ball</p>
+                <p>cb = Crazy Ball&nbsp;&nbsp;&nbsp;(modifies velocity randomly)</p>
+                <p>sp = Slow Paddle&nbsp;&nbsp;&nbsp;(slows opponent's paddle temporarily)</p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function () {
+                "use strict";
+
+                (function() {
+                  var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+                                              window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+                  window.requestAnimationFrame = requestAnimationFrame;
+                })();
+
+                
+                var pong = jeffjo.pong.pong;
+                pong.setupBoard("gameSurface", document.getElementById("main"));
+
+
+            }());
+        </script>
+	</body>
+</html>
+
