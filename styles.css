@@ -55,13 +55,14 @@ html {
 }
 
 .instructions, .debug {
-    width:600px;
+    width:580px;
     
     margin-left:auto;
     margin-right:auto;
     background-color:#DDD;
     vertical-align:middle;
     font-size:.8em;
+    padding:10px;
 }
 
 .instructions h1, .instructions h2 {
